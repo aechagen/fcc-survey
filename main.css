@@ -114,4 +114,6 @@ a:hover { text-decoration: underline; }
 
 input {
   display: inline-block;
+  padding-bottom: 10px;
 }
+
