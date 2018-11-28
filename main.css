@@ -43,7 +43,7 @@
 }
 
 body {
-  background: seagreen;
+  background: mediumaquamarine;
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -107,13 +107,30 @@ a:hover { text-decoration: underline; }
 
 /* Actual styles */
 
-#survey-wrapper {
-  background: #ffffff;
+.container {
   text-align: center;
+  background: #fff;
+  border-radius: 3px;
+  width: 65%;
+  padding: 25px;
 }
 
-input {
+.row {
+  margin-top: 15px;
+}
+
+
+.labels {
   display: inline-block;
-  padding-bottom: 10px;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
 }
 
+.right-side {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}

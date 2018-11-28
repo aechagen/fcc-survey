@@ -9,8 +9,100 @@
   <link rel="stylesheet" href="main.css"> <!-- HEY YOU. Don't put a '/' behind main.css for gh-pages! -->
 </head>
 <body>
+  <h2 class="title text-center">Survey Form</h2>
   <div class="container">
-    
+    <p>Let us know how we can improve freeCodeCamp</p>
+    <form action="/submit-form">
+      <div class="row">
+        <div class="labels">
+          <label for="name">* Name: </label>
+        </div> <!-- .labels -->
+        <div class="right-side"> <!-- Strong side -->
+          <input type="text" name="name" id="name" class="input-field" placeholder="Your name">
+        </div> <!-- .right-side -->
+      </div> <!-- .row -->
+
+      <div class="row">
+        <div class="labels">
+          <label for="email">* E-mail: </label>
+        </div> <!-- .labels -->
+        <div class="right-side">
+          <input type="text" name="email" id="email" class="input-field" placeholder="Your email">
+        </div> <!-- .right-side -->
+      </div> <!-- .row -->
+
+      <div class="row">
+        <div class="labels">
+          <label for="age">* Age: </label>
+        </div> <!-- .labels -->
+
+        <div class="right-side">
+          <input type="number" name="age" id="age" class="input-field" placeholder="Age">
+        </div>
+      </div> <!-- .row -->
+
+      <div class="row">
+        <div class="labels">
+          <label for="position">Which option best describes your current role?</label>
+        </div> <!-- .labels -->
+
+        <div class="right-side">
+          <select name="position" id="position">
+            <option disabled value>Pick something</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="not-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div> <!-- .right-side -->
+      </div> <!-- .row -->
+
+      <div class="row">
+        <div class="labels">
+          <label for="rate-us">* How likely would you recommend freeCodeCamp to a friend? </label>
+        </div> <!-- .labels -->
+
+        <div class="right-side">
+          <input type="radio"> Definitely
+          <input type="radio"> Maybe
+          <input type="radio"> Not sure
+        </div>
+      </div> <!-- .row -->
+
+      <div class="row">
+        <div class="labels">
+          <label for="position">What do you most like in FCC?</label>
+        </div> <!-- .labels -->
+      
+        <div class="right-side">
+          <select name="position" id="position">
+            <option disabled value>Pick something</option>
+            <option value="challenges">Challenges</option>
+            <option value="open-source">Open Source Community</option>
+            <option value="Community">Community</option>
+          </select>
+        </div> <!-- .right-side -->
+      </div> <!-- .row -->
+
+      <div class="row">
+        <div class="labels">
+          <label for="improvements">Things that should be improved in the future (check all that apply)</label>
+        </div> <!-- .labels -->
+
+        <div class="right-side">
+          <input type="checkbox">Front-end projects
+          <input type="checkbox">Data visualizations
+          <input type="checkbox">Challenges
+          <input type="checkbox">Open source community
+          <input type="checkbox">Gitter help rooms
+          <input type="checkbox">Videos
+          <input type="checkbox">Meetups
+          <input type="checkbox">Forum
+        </div>
+      </div>
+
+    </form>
   </div> <!-- .container -->
 </body>
 </html>
